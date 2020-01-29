@@ -1,4 +1,6 @@
 #!/bin/sh
-echo "Hello world"
+clear
+echo "WordPress Directory Contents:"
+echo "============================="
 cd /var/www/html
 ls -l

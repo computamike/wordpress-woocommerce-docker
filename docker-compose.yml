@@ -16,7 +16,9 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
    wordpress:
-     image: wordpress:latest
+     build:
+       context: .
+       dockerfile: dockerfile
      volumes:
         - ./setup-script.sh:/var/www/html/setup-script.sh
 
